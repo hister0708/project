@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	a{
+		display: block;
+		margin: 0 auto; /* 수평 가운데 정렬 */
+	}
+	#logo{
+		display: block; /* 블록 요소로 설정하여 가로폭에 맞게 정렬 */
+		margin: 0 auto; /* 수평 가운데 정렬 */
+	}
+
+	#joinbutton{
+		width : 100px;
+		height : 30px;
+	}
+	#info {
+		background-color: #ccc;
+	    border-radius: 10px;
+	    padding: 20px;
+	    width: fit-content;
+	    margin: 0 auto;
+	    }
+  </style>
+</head>
+<body>
+	<a href="#">
+	   <img id = "logo" src="CGV.png" width="100" height="50">
+	 </a>
+	<div align = "center" id = "info">
+		<p>
+			<form name = "myform" action ="MemProcess">
+				<table>
+					<caption><h3>회원가입</h3></caption>
+					<tr>
+						<th width = "30%">이름</th><td width = "70%" align="center">
+						<input type = "text" name = "name" size = "20"/></td>
+					</tr>
+					<tr>
+						<th width = "30%">나이</th><td width = "70%" align="center">
+						<input type = "text" name = "age" size = "20"/></td>
+					</tr>
+					<tr>
+						<th width = "30%">아이디</th><td width = "70%" align="center">
+						<input type = "text" name = "ID" size = "20"/></td>
+					</tr>
+					<tr>
+						<th width = "30%">비밀번호</th><td width = "70%" align="center">
+						<input type = "text" name = "pwd" size = "20"/></td>
+					</tr>
+					<tr>
+						<th width = "30%">전화번호</th><td width = "70%" align="center">
+						<input type = "text" name = "phone" size = "20"/></td>
+					</tr>
+					<tr>
+						<th width = "30%">계좌번호</th><td width = "70%" align="center">
+						<input type = "text" name = "acount" size = "20"/></td>
+					</tr>
+					
+				</table>
+				<br>
+				<table width = "40%">
+					<tr>
+						<td align="right"><input type = "hidden" id ="action" name = "action" value = "insert">
+						<input id = "joinbutton" type ="submit" value = "회원가입"/></td>
+					</tr>
+				</table>
+			</form>
+		</p>
+	</div>
+</body>
+</html>
